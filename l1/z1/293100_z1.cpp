@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    cout << "Podać liczbę naturalną kurwa";
+    cout << "Podać liczbę naturalną";
     int r;
     cin >> r;
     list<int> L = {};
