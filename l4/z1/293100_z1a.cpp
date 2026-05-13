@@ -3,20 +3,12 @@
 using namespace std;
 
 int main() {
-    int k, n, b = 0, c = 1;
+    int n, b = 1, c = 1;
     cin >> n;
-    for (int i = 2; i < n+1; i++)
+    for (int i = 1; i < n; i++)
     {
-        k = c;
         c = c + b;
-        b = k;
+        b = c - b;
     }
-    if (n == 0)
-    {
-        cout << b;
-    }
-    else
-    {
-        cout << c;
-    }
+    cout << c;
 }
